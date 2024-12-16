@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Medical Appointment Booking</title>
+</head>
+
+<body>
+    <header class="header">
+        <h1>Medical Appointment Booking</h1>
+        <nav>
+            <ul>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#appointment">Book Appointment</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2><span>Our Services</span></h2>
+        <div class="contact">
+            <div>
+                <div class="service-card">
+                    <h3>Optician</h3>
+                    <p>Comprehensive eye exams and vision care.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Pediatrician</h3>
+                    <p>Expert care for your child's health and development.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Gynecologist</h3>
+                    <p>Comprehensive women's health services.</p>
+                </div>
+            </div>
+            <div>
+                <img src="imgs\doc1.png" alt="img" width="250px">
+            </div>
+            <div>
+                <div class="service-card">
+                    <h3>Orthopedic</h3>
+                    <p>Specialized in bone and joint health.</p>
+                </div>
+                <div class="service-card">
+                    <h3>General Doctor</h3>
+                    <p>General health check-ups and consultations.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Outpatience</h3>
+                    <p>Order and delivery of medicines accross the country.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment">
+        <h2>Book an Appointment</h2>
+        <form id="appointmentForm" onsubmit="submitForm(event)">
+            <label for="service">Select Service:</label>
+            <select id="service" required>
+                <option value="">--Choose a Service--</option>
+                <option value="Optician">Optician</option>
+                <option value="Pediatrician">Pediatrician</option>
+                <option value="Gynecologist">Gynecologist</option>
+                <option value="Orthopedic">Orthopedic</option>
+                <option value="General Doctor">General Doctor</option>
+                <option value="outpatient">Outpatient</option>
+            </select>
+
+            <label for="doctor">Select Doctor:</label>
+            <select id="doctor" required>
+                <option value="">--Choose a Doctor--</option>
+                <option value="Dr. Smith">Dr. Smith</option>
+                <option value="Dr. Johnson">Dr. Johnson</option>
+                <option value="Dr. Williams">Dr. Williams</option>
+                <option value="Dr. Brown">Dr. Brown</option>
+                <option value="Dr. Davis">Dr. Davis</option>
+            </select>
+
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="time">Select Time:</label>
+            <input type="time" id="time" required>
+
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="contact">Contact Number:</label>
+            <input type="tel" id="contact" required><center>
+
+            <button type="submit">Book Appointment</button></center>
+        </form>
+        <div id="confirmationMessage"></div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="" alt="">
+            <h4>contact</h4>
+            <p><strong>Address:</strong> 562 Wellington Road, Street 32, san Francisco</p>
+            <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
+            <p><strong>Hours:</strong> 10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>follow Us</h4>
+                <div classs="icon">
+                    <i class="fab fa-facebook-f"><img src="img\fb.png" alt="" width="15px"></i>
+                    <i class="fab fa-twitter"><img src="img\twitter.png" alt="" width="15px"></i>
+                    <i class="fab fa-instagram"><img src="img\ig.png" alt="" width="15px"></i>
+                    <i class="fab fa-pininterest"><img src="img\pininterest.png" alt="" width="15px"></i>
+                    <i class="fab fa-youtube"><img src="img\utube.png" alt="" width="15px"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign In</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my Order</a>
+            <a href="#">Help</a>
+        </div>
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From Appstore or Google play store</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+        <div class="copyright">
+            <p>D 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
+        </div>
+    </footer>
+    <script src="js\script.js"></script>
+</body>
+
+</html>
